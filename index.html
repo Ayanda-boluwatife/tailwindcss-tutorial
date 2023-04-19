@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-color-primary text-color-white tracking-wider">
-    <header>
+    <header class="sticky top-0 z-50">
         <nav class="container flex justify-between items-center">
             <div class="py-5 text-color-secondary font-bold text-3xl">
                 <a href=""><span class="text-color-white">Light</span>Code.</a>
@@ -411,68 +411,96 @@
                 </div>
             </div>
         </section>
+
+        <section id="download" class="bg-color-primary-light">
+            <div class="container h-[80vh] grid place-items-center">
+                <div class="text-center md:w-2/3 m-auto">
+                    <h1 class="title">Download App Now And Save Your Money</h1>
+                    <p class="leading-relaxed pt-5">Serving an impressive lists of long-term money with experience and exercise in multiple industries</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-5 pt-10">
+                        <a href="#" class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70">Apple</a>
+                        <a href="#" class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70">play-store</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Have a Question</h4>
+                    <h1 class="title">Get in touch</h1>
+                </div>
+                <form>
+                    <div class="w-full m-auto text-center md:w-2/3">
+                        <div class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2">
+                            <input type="text" name="" id="" class="bg-color-white border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Name">
+                            <input type="text" name="" id="" class="bg-color-white border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Email">
+                            <input type="text" name="" id="" class="bg-color-white border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Phone Num">
+                            <input type="text" name="" id="" class="bg-color-white border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Company">
+                        </div>
+                        <textarea rows="8" class="text-color-primary-dark bg-color-white border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Message"></textarea>
+                        <button class="btn mt-10">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="bg-color-primary-dark relative">
+                <div class="container py-10">
+                    <div class="grid gap-10 md:grid-cols-3 pb-10">
+                        <div class="space-y-6">
+                            <h1 class="font-bold text-lg">About App</h1>
+                            <p class="leading-relaxed">This should be used to tell a story and include testimonial you might have about your product or service for your clients</p>
+                            <div class="flex gap-5 items-center">
+                                <p>Follow Us</p>
+                                <i class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary"></i>
+                                <i class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary"></i>
+                                <i class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary"></i>
+                                <i class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between md:justify-around">
+                            <div class="space-y-6">
+                                <h1 class="font-bold text-lg">Quick Links</h1>
+                                <ul class="space-y-3">
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Home</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Feature</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Testimonial</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Pricing</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Blog</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="space-y-6">
+                                <h1 class="font-bold text-lg">Help</h1>
+                                <ul class="space-y-3">
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">About Us</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Partners</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Careers</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Reviews</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Terms & Conditions</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <h1 class="font-bold text-lg">Newsletter</h1>
+                            <p class="leading-relaxed">Subcribe with email and loads of news will be sent to you</p>
+                            <div class="flex items-center">
+                                <input type="text" class="w-3/4 text-color-gray bg-color-white p-2 lg:p-3 rounded-l-md focus:outline-none" placeholder="Enter your email">
+                                <button type="submit" class="bg-color-secondary px-4 py-2 lg:px-5 lg:py-3 rounded-r-md hover:opacity-90"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center pt-10 border-t border-color-gray">
+                        <p>2023 &copy; LightCode All Rights Rserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <script>
-        // mobile view
-        const harmburger = document.querySelector("#harmburger");
-        const menu = document.querySelector("#menu");
-        const hLink = document.querySelectorAll("#hLink");
-        const faSolid = document.querySelector(".fa-solid");
-
-        harmburger.addEventListener('click', ()=>{
-            menu.classList.toggle('hidden');
-            faSolid.classList.toggle('fa-xmark')
-        })
-
-        hLink.forEach(link => {
-            link.addEventListener('click', ()=>{
-                menu.classList.toggle('hidden');
-                faSolid.classList.toggle('fa-xmark')
-            })
-        });
-
-
-        // testimonial
-        const userTexts = document.getElementsByClassName("user-text")
-        const userPics = document.getElementsByClassName("user-pic")
-
-        function showReview() {
-            for(userPic of userPics) {
-                userPic.classList.remove("active-pic")
-            }
-            for(userText of userTexts) {
-                userText.classList.remove("active-text")
-            }
-
-            let i = Array.from(userPics).indexOf(event.target);
-            userPics[i].classList.add("active-pic");
-            userTexts[i].classList.add("active-text");
-        }
-
-        // pricing
-
-        const toggleBtn = document.getElementById("toggleBtn")
-
-        const card_1_front = document.querySelector("#card_1_front")
-        const card_1_back = document.querySelector("#card_1_back")
-
-        const card_2_front = document.querySelector("#card_2_front")
-        const card_2_back = document.querySelector("#card_2_back")
-
-        const card_3_front = document.querySelector("#card_3_front")
-        const card_3_back = document.querySelector("#card_3_back")
-
-        toggleBtn.addEventListener('change', ()=>{
-            card_1_front.classList.toggle('-rotate-y-180');
-            card_1_back.classList.toggle('rotate-y-180');
-
-            card_2_front.classList.toggle('-rotate-y-180');
-            card_2_back.classList.toggle('rotate-y-180');
-
-            card_3_front.classList.toggle('-rotate-y-180');
-            card_3_back.classList.toggle('rotate-y-180');
-        })
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
